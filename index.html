@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style2.css">
+</head>
+
+<body>
+
+    <!-- <div class="block1">block1
+    </div>
+    <div class="block2">block2</div>
+    <div class="block3">block3
+        <div></div>
+    </div>
+    <div class="block4">block4</div> -->
+
+    <div class="content">content
+        <div class="inside">inside</div>
+        <div>
+            <button id="open">open</button>
+            <dialog id="modal">
+                <h2>Hello world!</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos molestiae tempora accusamus.
+                    Voluptates, consequatur culpa fuga, quisquam ullam quasi quidem harum autem vero voluptatem at, esse
+                    exercitationem eum. Aliquam, ducimus!</p>
+                <button id="close">close</button>
+            </dialog>
+        </div>
+    </div>
+
+    <footer>footer</footer>
+
+</body>
+
+<script>
+    const openmodal = document.querySelector('#open');
+    const closemodal = document.querySelector('#close');
+    const modal = document.querySelector('#modal')
+
+    openmodal.addEventListener('click', () => {
+        modal.showModal();
+    })
+    closemodal.addEventListener('click', () => {
+        modal.close();
+    })
+
+
+</script>
+
+</html>
